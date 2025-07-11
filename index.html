@@ -74,8 +74,8 @@
             top: 20px;
             left: 50%; /* Centered horizontally */
             transform: translateX(-50%); /* Centered horizontally */
-            width: 120px; 
-            height: 80px; 
+            width: 350px; /* Increased size to match title width */
+            height: 200px; /* Increased size to match title height/proportions */
             z-index: 1000;
             border-radius: 5px;
             overflow: hidden;
@@ -120,7 +120,7 @@
         
         @keyframes titleGlow {
             0% { filter: drop-shadow(0 0 10px #00ffff); }
-            100% { filter: drop_shadow(0 0 20px #ff00ff); }
+            100% { filter: drop-shadow(0 0 20px #ff00ff); }
         }
         
         .subtitle {
@@ -539,17 +539,6 @@
                         <option value="M15">M15</option>
                         <option value="M30">M30</option>
                         <option value="H1">H1</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-arrows-alt-v"></i> Signal Type
-                    </label>
-                    <select class="form-select" id="fb-signal-type">
-                        <option value="FUTURE">FUTURE (with direction)</option>
-                        <option value="BLACKOUT">BLACKOUT (no direction)</option>
-                        <option value="BOTH">BOTH (mixed)</option>
                     </select>
                 </div>
 
